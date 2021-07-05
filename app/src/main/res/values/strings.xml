@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Namak Shamak</string>
+    <!--//////////////////////BURGER//////////////////////////////////////-->
+    <string-array name="namburger">
+        <item>Borger</item>
+        <item>Borger2</item>
+        <item>Borger3</item>
+        <item>Borger4</item>
+        <item>Borger5</item>
+        <item>Borger6</item>
+        <item>Borger7</item>
+    </string-array>
+    <string-array name="recburger">
+        <item>Reciepe Here</item>
+        <item>Reciepe Here</item>
+        <item>Reciepe Here</item>
+        <item>Reciepe Here</item>
+        <item>Reciepe Here</item>
+        <item>Reciepe Here</item>
+        <item>Reciepe Here</item>
+    </string-array>
+<!--//////////////////////BURGER//////////////////////////////////////-->
+<!--    ////////////////////////NOODles\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <string-array name="namnoodles">
+        <item>Noodle</item>
+        <item>Noodle2</item>
+        <item>Noodle3</item>
+        <item>Noodle4</item>
+        <item>Noodle5</item>
+        <item>Noodle6</item>
+        <item>Noodle7</item>
+        <item>Noodle8</item>
+        <item>Noodle9</item>
+    </string-array>
+
+    <string-array name="recNoodles">
+        <item>Reciepe here</item>
+        <item>Reciepe here</item>
+        <item>Reciepe here</item>
+        <item>Reciepe here</item>
+        <item>Reciepe here</item>
+        <item>Reciepe here</item>
+        <item>Reciepe here</item>
+        <item>Reciepe here</item>
+        <item>Reciepe here</item>
+    </string-array>
+
+<!--    //////////////////NOODLES//////////////-->
+</resources>
