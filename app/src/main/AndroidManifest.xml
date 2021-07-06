@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NamakShamak">
-        <activity android:name=".cat_noodles"></activity>
+        <activity android:name=".cat_salaa"></activity>
+        <activity android:name=".cat_noodles" />
         <activity android:name=".cat_burr" />
         <activity android:name=".Home" />
         <activity android:name=".register" />

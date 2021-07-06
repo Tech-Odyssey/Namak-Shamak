@@ -23,4 +23,9 @@ public class Home extends AppCompatActivity {
         Intent inoo= new Intent(Home.this,cat_noodles.class);
         startActivity(inoo);
     }
+
+    public void gotosalad(View view) {
+        Intent isala = new Intent(Home.this,cat_salaa.class);
+        startActivity(isala);
+    }
 }

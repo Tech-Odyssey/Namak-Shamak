@@ -19,8 +19,8 @@
         <item>Reciepe Here</item>
         <item>Reciepe Here</item>
     </string-array>
-<!--//////////////////////BURGER//////////////////////////////////////-->
-<!--    ////////////////////////NOODles\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <!--//////////////////////BURGER//////////////////////////////////////-->
+    <!--    ////////////////////////NOODles\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
     <string-array name="namnoodles">
         <item>Noodle</item>
         <item>Noodle2</item>
@@ -45,5 +45,25 @@
         <item>Reciepe here</item>
     </string-array>
 
-<!--    //////////////////NOODLES//////////////-->
+    <!--    //////////////////NOODLES//////////////-->
+<!--    /////////////////////SALAD\\\\\\\\\\\\\\\\\\\\\-->
+<string-array name="namsala">
+    <item>Salad1</item>
+    <item>Salad2</item>
+    <item>Salad3</item>
+    <item>Salad4</item>
+    <item>Salad5</item>
+    <item>Salad6</item>
+    <item>Salad7</item>
+</string-array>
+<string-array name="recsala">
+    <item>time/recipe here</item>
+    <item>time/recipe here</item>
+    <item>time/recipe here</item>
+    <item>time/recipe here</item>
+    <item>time/recipe here</item>
+    <item>time/recipe here</item>
+    <item>time/recipe here</item>
+</string-array>
 </resources>
+
