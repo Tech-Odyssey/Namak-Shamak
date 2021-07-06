@@ -28,4 +28,12 @@ public class Home extends AppCompatActivity {
         Intent isala = new Intent(Home.this,cat_salaa.class);
         startActivity(isala);
     }
+
+    public void gotosub(View view) {
+        Intent isub = new Intent(Home.this,cat_sub.class);
+        startActivity(isub);
+    }
+
+    public void gotopan(View view) {
+    }
 }

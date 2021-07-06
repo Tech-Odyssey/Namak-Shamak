@@ -46,24 +46,46 @@
     </string-array>
 
     <!--    //////////////////NOODLES//////////////-->
-<!--    /////////////////////SALAD\\\\\\\\\\\\\\\\\\\\\-->
-<string-array name="namsala">
-    <item>Salad1</item>
-    <item>Salad2</item>
-    <item>Salad3</item>
-    <item>Salad4</item>
-    <item>Salad5</item>
-    <item>Salad6</item>
-    <item>Salad7</item>
-</string-array>
-<string-array name="recsala">
-    <item>time/recipe here</item>
-    <item>time/recipe here</item>
-    <item>time/recipe here</item>
-    <item>time/recipe here</item>
-    <item>time/recipe here</item>
-    <item>time/recipe here</item>
-    <item>time/recipe here</item>
-</string-array>
+    <!--    /////////////////////SALAD\\\\\\\\\\\\\\\\\\\\\-->
+    <string-array name="namsala">
+        <item>Salad1</item>
+        <item>Salad2</item>
+        <item>Salad3</item>
+        <item>Salad4</item>
+        <item>Salad5</item>
+        <item>Salad6</item>
+        <item>Salad7</item>
+    </string-array>
+    <string-array name="recsala">
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+    </string-array>
+    <!--    /////////////////////SALAD\\\\\\\\\\\\\\\\\\\\\-->
+    <!--    /////////////////////Subway\\\\\\\\\\\\\\\\\\\\\-->
+    <string-array name="namsub">
+        <item>Subway1</item>
+        <item>Subway2</item>
+        <item>Subway3</item>
+        <item>Subway4</item>
+        <item>Subway5</item>
+        <item>Subway6</item>
+        <item>Subway7</item>
+        <item>Subway8</item>
+    </string-array>
+    <string-array name="recsub">
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+    </string-array>
 </resources>
 

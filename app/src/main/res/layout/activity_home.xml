@@ -106,7 +106,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/subway" />
+                app:srcCompat="@drawable/subway"
+                android:onClick="gotosub"
+                />
 
             <ImageView
                 android:id="@+id/imageView11"
@@ -114,7 +116,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/paneer" />
+                app:srcCompat="@drawable/paneer"
+                android:onClick="gotopan"
+                />
         </LinearLayout>
     </HorizontalScrollView>
 
