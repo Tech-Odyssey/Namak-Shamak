@@ -6,22 +6,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-public class cat_sub extends AppCompatActivity {
+public class cat_paneer extends AppCompatActivity {
     RecyclerView recyclerView;
-    String sun[],sur[];
-    int images[]={R.drawable.subway,R.drawable.subway,R.drawable.subway,R.drawable.subway,
-            R.drawable.subway,R.drawable.subway,R.drawable.subway,R.drawable.subway};
+    String pn[],pr[];
+    int images[]={R.drawable.paneer,R.drawable.paneer,R.drawable.paneer,R.drawable.paneer,
+            R.drawable.paneer,R.drawable.paneer,R.drawable.paneer,R.drawable.paneer};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cat_sub);
+        setContentView(R.layout.activity_cat_paneer);
         recyclerView= findViewById(R.id.recyclerView);
-        sun=getResources().getStringArray(R.array.namsub);
-        sur=getResources().getStringArray(R.array.recsub);
-
-        Myadaptar myadaptar = new Myadaptar(this,sun,sur,images);
+        pn=getResources().getStringArray(R.array.nampan);
+        pr=getResources().getStringArray(R.array.recpan);
+        Myadaptar myadaptar = new Myadaptar(this,pn,pr,images);
         recyclerView.setAdapter(myadaptar);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
     }
 }

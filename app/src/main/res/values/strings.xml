@@ -87,5 +87,27 @@
         <item>time/recipe here</item>
         <item>time/recipe here</item>
     </string-array>
+<!--    ////////////////////////////////SUBWAY\\\\\\\\\\\\\\\\\\\\\\\-->
+<!--    //////////////////////////////////PANNER-->
+    <string-array name="nampan">
+        <item>Paneer1</item>
+        <item>Paneer2</item>
+        <item>Paneer3</item>
+        <item>Paneer4</item>
+        <item>Paneer5</item>
+        <item>Paneer6</item>
+        <item>Paneer7</item>
+        <item>Paneer8</item>
+    </string-array>
+    <string-array name="recpan">
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+        <item>time/recipe here</item>
+    </string-array>
 </resources>
 

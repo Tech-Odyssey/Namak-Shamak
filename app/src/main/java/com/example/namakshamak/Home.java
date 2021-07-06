@@ -35,5 +35,7 @@ public class Home extends AppCompatActivity {
     }
 
     public void gotopan(View view) {
+        Intent ipan= new Intent(Home.this,cat_paneer.class);
+        startActivity(ipan);
     }
 }
