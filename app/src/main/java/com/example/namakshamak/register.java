@@ -22,7 +22,7 @@ import com.google.firebase.auth.internal.FederatedSignInActivity;
 public class register extends AppCompatActivity {
 
     // email password reg
-    private EditText Name, Email, pass;
+    private EditText Name,Email,pass;
     private TextView TextView;
     private Button RegisterButton;
 
@@ -31,7 +31,7 @@ public class register extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstance) {
+    protected void onCreate(Bundle savedInstance){
         super.onCreate(savedInstance);
         setContentView(R.layout.activity_register);
 
@@ -47,23 +47,19 @@ public class register extends AppCompatActivity {
                 createUSer();
             }
         });
-<<<<<<< Updated upstream
-=======
 
         //initializing auth
         auth = FirebaseAuth.getInstance();
 
 
->>>>>>> Stashed changes
     }
-
-    private void createUSer() {
+    private void createUSer(){
         String email = Email.getText().toString();
         String password = pass.getText().toString();
 
-        if (!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            if (!password.isEmpty()) {
-                auth.createUserWithEmailAndPassword(email, password)
+        if(!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            if(!password.isEmpty()){
+                auth.createUserWithEmailAndPassword(email,password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -78,13 +74,15 @@ public class register extends AppCompatActivity {
 
                     }
                 });
-            } else {
-                pass.setError("Empty fields are not allowed xD");
+            }else{
+                pass.setError("Empty fields are not allowed");
             }
-        } else if (email.isEmpty()) {
+        }else if (email.isEmpty()){
             Email.setError("Empty fields are not allowed");
-        } else {
+        }else{
             Email.setError("Please enter correct email");
         }
     }
+
+
 }
