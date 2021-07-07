@@ -25,7 +25,6 @@ public class Login extends AppCompatActivity {
     Button mlogin_btn;
     TextView mCreateBtn;
     // space for new here sign up button
-
     FirebaseAuth auth;
 
     @Override
