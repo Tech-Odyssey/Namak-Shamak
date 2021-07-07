@@ -30,7 +30,7 @@ private void getdata(){
             images=getIntent().getIntExtra("images", 1);
         }
         else {
-            Toast.makeText(this, "NO DAta", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "NO Data", Toast.LENGTH_SHORT).show();
         }
 }
 private void setdata(){

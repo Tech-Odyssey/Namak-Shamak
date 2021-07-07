@@ -78,11 +78,16 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="204dp"
+        android:layout_marginBottom="200dp"
         android:text="     Already registered? Login"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#1F2020"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="93dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        android:clickable="true"
+        android:onClick="gotolog"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

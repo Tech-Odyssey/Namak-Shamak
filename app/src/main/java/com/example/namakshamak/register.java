@@ -72,4 +72,9 @@ public class register extends AppCompatActivity {
         });
 
     }
+
+    public void gotologin(View view) {
+        Intent igolo=new Intent(register.this,Login.class);
+        startActivity(igolo);
+    }
 }
