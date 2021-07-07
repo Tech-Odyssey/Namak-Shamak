@@ -71,7 +71,6 @@ public class register extends AppCompatActivity {
                 });
             }
         });
-
     }
 
     public void gotolog(View view) {
