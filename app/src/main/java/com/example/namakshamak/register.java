@@ -25,6 +25,7 @@ public class register extends AppCompatActivity {
     private EditText Name,Email,pass;
     private TextView TextView;
     private Button RegisterButton;
+    TextView mlogin;
 
     //firebase auth instance
     private FirebaseAuth auth;
@@ -40,6 +41,7 @@ public class register extends AppCompatActivity {
         pass = findViewById(R.id.editTextTextPassword3);
         TextView = findViewById(R.id.textView);
         RegisterButton = findViewById(R.id.button5);
+        mlogin = findViewById(R.id.login);
 
         RegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,8 +84,17 @@ public class register extends AppCompatActivity {
         }else{
             Email.setError("Please enter correct email");
         }
+        mlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Login.class));
+            }
+        });
 
     }
 
 
+    public void gotlog(View view) {
+        startActivity(new Intent(getApplicationContext(),Login.class));
+    }
 }

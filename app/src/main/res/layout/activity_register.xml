@@ -77,19 +77,20 @@
         />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
-        android:text="     Already registered? Login"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#1F2020"
+        android:text="Already Registered? Log In"
+        android:textColor="#050505"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7"
         android:clickable="true"
-        android:onClick="gotolog"
+        android:onClick="gotlog"
         />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
