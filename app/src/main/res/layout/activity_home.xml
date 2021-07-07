@@ -32,7 +32,7 @@
         android:text="Choose the \nFood you Love"
         android:textSize="24dp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
+        app:layout_constraintBottom_toTopOf="@+id/searchtext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.167"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/searchtext" />
 
     <HorizontalScrollView
         android:layout_width="366dp"
