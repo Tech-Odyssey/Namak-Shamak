@@ -52,6 +52,10 @@ public class register extends AppCompatActivity {
                     mPass.setError("Password is required");
                     return;
                 }
+                if(pass.length()<6){
+                    mPass.setError("Password should be >=6 characters");
+                    return;
+                }
 
                 auth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
