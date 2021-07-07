@@ -32,7 +32,7 @@ public class register extends AppCompatActivity {
         mName = findViewById(R.id.editTextTextPersonName2);
         mEmail = findViewById(R.id.editTextTextPersonName3);
         mPass = findViewById(R.id.editTextTextPassword3);
-
+        mRegister=findViewById(R.id.button5);
         auth = FirebaseAuth.getInstance();
         if(auth.getCurrentUser() !=null){
             startActivity(new Intent(getApplicationContext(),MainActivity.class));
@@ -73,7 +73,7 @@ public class register extends AppCompatActivity {
 
     }
 
-    public void gotologin(View view) {
+    public void gotolog(View view) {
         Intent igolo=new Intent(register.this,Login.class);
         startActivity(igolo);
     }
