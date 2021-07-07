@@ -82,6 +82,7 @@ public class register extends AppCompatActivity {
         }else{
             Email.setError("Please enter correct email");
         }
+
     }
 
 
