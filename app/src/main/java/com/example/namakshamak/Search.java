@@ -14,16 +14,16 @@ public class Search extends AppCompatActivity {
         setContentView(R.layout.activity_search);
         webView=findViewById(R.id.webview);
         String searchline=getIntent().getExtras().getString("searchline");
-        String[] a = searchline.split( " " );
+        String[] arr = searchline.split( " ");
         String url="https://www.allrecipes.com/search/results/?search=";
         String newurl=url;
 
-        for (String a1 : a){
-            newurl= newurl + a1 +"+";
+        for (String a1 : arr){
+            newurl=newurl+a1+"+";
         }
         webView.setWebViewClient(new WebViewClient());
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setBuiltInZoomControls(true);
-        webView.loadUrl("http://" +newurl);
+        webView.loadUrl(newurl);
     }
 }

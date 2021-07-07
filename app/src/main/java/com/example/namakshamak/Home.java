@@ -51,7 +51,7 @@ public class Home extends AppCompatActivity {
         if (searchline.isEmpty()) {
             Toast.makeText(Home.this, "Please Enter Something!", Toast.LENGTH_SHORT).show();
         } else {
-            Intent isearch = new Intent();
+            Intent isearch = new Intent(Home.this,Search.class);
             isearch.putExtra("searchline", searchline);
             startActivity(isearch);
         }
