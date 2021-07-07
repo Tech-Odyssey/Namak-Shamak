@@ -54,6 +54,7 @@ public class register extends AppCompatActivity {
                 }
                 if(pass.length()<6){
                     mPass.setError("Password should be >=6 characters");
+
                     return;
                 }
 
