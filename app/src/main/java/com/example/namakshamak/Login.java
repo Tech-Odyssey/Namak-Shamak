@@ -49,6 +49,7 @@ public class Login extends AppCompatActivity {
                 String password = mPassword.getText().toString();
 
                 if (!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                    if(!password.isEmpty()){
                     auth.signInWithEmailAndPassword(email, password)
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
@@ -62,7 +63,12 @@ public class Login extends AppCompatActivity {
                         public void onFailure(@NonNull Exception e) {
                             Toast.makeText(Login.this, "Login Error", Toast.LENGTH_SHORT).show();
                         }
-                    });
+                        });
+                    }else{
+                        mPassword.setError("Please enter correct password");
+                    }
+                }else{
+                    mEmail.setError("Please enter correct email");
                 }
             }
         });
