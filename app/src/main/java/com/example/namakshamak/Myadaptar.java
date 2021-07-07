@@ -14,15 +14,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class Myadaptar extends RecyclerView.Adapter<Myadaptar.Myviewholder> {
 
-    String data1[], data2[];
+    String data1[], data2[],data3[];
     int images[];
     Context context;
 
-    public Myadaptar(Context ct, String bn[], String br[], int img[]){
+    public Myadaptar(Context ct, String bn[], String br[], int img[],String brr[]){
     context=ct;
     data1=bn;
     data2=br;
     images=img;
+    data3=brr;
     }
 
     @NonNull
@@ -48,6 +49,7 @@ public class Myadaptar extends RecyclerView.Adapter<Myadaptar.Myviewholder> {
                 intent12.putExtra("data1",data1[position]);
                 intent12.putExtra("data2",data2[position]);
                 intent12.putExtra("images",images[position]);
+                intent12.putExtra("data3",data3[position]);
                 context.startActivity(intent12);
             }
         });

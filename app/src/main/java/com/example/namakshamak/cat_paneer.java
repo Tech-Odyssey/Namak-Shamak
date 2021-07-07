@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 public class cat_paneer extends AppCompatActivity {
     RecyclerView recyclerView;
-    String pn[],pr[];
+    String pn[],pr[],brr[];
     int images[]={R.drawable.paneer,R.drawable.paneer,R.drawable.paneer,R.drawable.paneer,
             R.drawable.paneer,R.drawable.paneer,R.drawable.paneer,R.drawable.paneer};
     @Override
@@ -18,7 +18,8 @@ public class cat_paneer extends AppCompatActivity {
         recyclerView= findViewById(R.id.recyclerView);
         pn=getResources().getStringArray(R.array.nampan);
         pr=getResources().getStringArray(R.array.recpan);
-        Myadaptar myadaptar = new Myadaptar(this,pn,pr,images);
+        brr=getResources().getStringArray(R.array.recburgerrec);
+        Myadaptar myadaptar = new Myadaptar(this,pn,pr,images,brr);
         recyclerView.setAdapter(myadaptar);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }

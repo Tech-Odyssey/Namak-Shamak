@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 public class cat_salaa extends AppCompatActivity {
     RecyclerView recyclerView;
-    String sn[],sr[];
+    String sn[],sr[],brr[];
     int images[]={R.drawable.salad,R.drawable.salad,R.drawable.salad,R.drawable.salad,R.drawable.salad,
             R.drawable.salad,R.drawable.salad,R.drawable.salad};
     @Override
@@ -18,8 +18,8 @@ public class cat_salaa extends AppCompatActivity {
         recyclerView= findViewById(R.id.recyclerView);
         sn=getResources().getStringArray(R.array.namsala);
         sr=getResources().getStringArray(R.array.recsala);
-
-        Myadaptar myadaptar = new Myadaptar(this,sn,sr,images);
+        brr=getResources().getStringArray(R.array.recburgerrec);
+        Myadaptar myadaptar = new Myadaptar(this,sn,sr,images,brr);
         recyclerView.setAdapter(myadaptar);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }

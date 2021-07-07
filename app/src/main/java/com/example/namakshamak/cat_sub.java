@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 public class cat_sub extends AppCompatActivity {
     RecyclerView recyclerView;
-    String sun[],sur[];
+    String sun[],sur[],brr[];
     int images[]={R.drawable.subway,R.drawable.subway,R.drawable.subway,R.drawable.subway,
             R.drawable.subway,R.drawable.subway,R.drawable.subway,R.drawable.subway};
     @Override
@@ -18,8 +18,8 @@ public class cat_sub extends AppCompatActivity {
         recyclerView= findViewById(R.id.recyclerView);
         sun=getResources().getStringArray(R.array.namsub);
         sur=getResources().getStringArray(R.array.recsub);
-
-        Myadaptar myadaptar = new Myadaptar(this,sun,sur,images);
+        brr=getResources().getStringArray(R.array.recburgerrec);
+        Myadaptar myadaptar = new Myadaptar(this,sun,sur,images,brr);
         recyclerView.setAdapter(myadaptar);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

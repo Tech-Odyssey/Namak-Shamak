@@ -17,7 +17,6 @@ public class Search extends AppCompatActivity {
         String[] arr = searchline.split( " ");
         String url="https://www.allrecipes.com/search/results/?search=";
         String newurl=url;
-
         for (String a1 : arr){
             newurl=newurl+a1+"+";
         }

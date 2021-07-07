@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 public class cat_burr extends AppCompatActivity {
     RecyclerView recyclerView;
-    String bn[],br[];
+    String bn[],br[],brr[];
     int images[]= {R.drawable.burger,R.drawable.burger,R.drawable.burger,R.drawable.burger,R.drawable.burger,R.drawable.burger,R.drawable.burger};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,8 @@ public class cat_burr extends AppCompatActivity {
 
         bn=getResources().getStringArray(R.array.namburger);
         br=getResources().getStringArray(R.array.recburger);
-        Myadaptar myadaptar = new Myadaptar(this,bn,br,images);
+        brr=getResources().getStringArray(R.array.recburgerrec);
+        Myadaptar myadaptar = new Myadaptar(this,bn,br,images,brr);
 
         recyclerView.setAdapter(myadaptar);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
