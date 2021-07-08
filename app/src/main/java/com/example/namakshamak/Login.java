@@ -58,9 +58,13 @@ public class Login extends AppCompatActivity {
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
-                                    Toast.makeText(Login.this, "Logged In", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(Login.this, Home.class));
-                                    finish();
+                                    if(task.isSuccessful()) {
+                                        Toast.makeText(Login.this, "Logged In", Toast.LENGTH_SHORT).show();
+                                        startActivity(new Intent(Login.this, Home.class));
+                                        finish();
+                                    }else{
+                                        mPassword.setError("Please enter correct password");
+                                    }
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                         @Override
