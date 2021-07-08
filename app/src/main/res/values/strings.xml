@@ -20,7 +20,14 @@
         <item>Reciepe Here</item>
     </string-array>
     <string-array name="recburgerrec">
-        <item>detailed Reciepe Here1</item>
+        <item><![CDATA[
+    Step 1:\n
+    Process bread in a food processor until you have fine bread crumbs.\n
+Step 2:\n
+Stir bread crumbs, oats, salt, mustard, celery seed, and cumin together in a bowl. Mix chicken, onion, and egg together in a separate bowl; add bread crumb mixture to chicken mixture and mix. Divide and shape mixture into 7 patties.\n
+Step 3:\n
+Heat canola oil in a large skillet over medium heat. Cook patties in hot oil until browned each side and no longer pink the center, about 5 minutes per side. ]]>
+        </item>
         <item>detailed Reciepe Here2</item>
         <item>detailed Reciepe Here3</item>
         <item>detailed Reciepe Here4</item>

@@ -56,4 +56,13 @@ public class Home extends AppCompatActivity {
             startActivity(isearch);
         }
     }
+
+    public void gotochickencurry(View view) {
+        Intent intent12= new Intent(Home.this,detailed.class);
+        intent12.putExtra("data1","Text3");
+        intent12.putExtra("data2","text2");
+        intent12.putExtra("images",R.drawable.burger);
+        intent12.putExtra("data3","Text3");
+        startActivity(intent12);
+    }
 }
