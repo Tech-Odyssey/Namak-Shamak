@@ -12,7 +12,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent intentBackgroundService = new Intent(this, PushNotifications.class);
+        startService(intentBackgroundService);
     }
+
 
     public void onboarding(View view) {
         Intent intent = new Intent(MainActivity.this,Onboard.class);
