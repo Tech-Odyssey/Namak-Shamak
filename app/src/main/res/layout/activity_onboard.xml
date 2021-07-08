@@ -8,31 +8,60 @@
     tools:context=".Onboard">
 
 
-    <Button
+    <!--    <Button-->
+<!--        android:id="@+id/button3"-->
+<!--        android:layout_width="105dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:onClick="gotologin"-->
+<!--        android:text="Login"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.196"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.767" />-->
+
+    <soup.neumorphism.NeumorphButton
+
         android:id="@+id/button3"
-        android:layout_width="105dp"
-        android:layout_height="40dp"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:onClick="gotologin"
+
         android:text="Login"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.767" />
 
-    <Button
+        app:layout_constraintVertical_bias="0.878"
+        app:neumorph_backgroundColor="#fd5657"
+        app:neumorph_shadowColorDark="#B03C3D"
+        app:neumorph_shadowColorLight="#ff9b99"
+        app:neumorph_shapeType="flat" />
+
+    <soup.neumorphism.NeumorphButton
         android:id="@+id/button4"
+        style="@style/Widget.Neumorph.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="gotoregister"
+
         android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.871" />
+
+        app:layout_constraintVertical_bias="0.975"
+        app:neumorph_backgroundColor="#fd5657"
+        app:neumorph_shadowColorDark="#B03C3D"
+        app:neumorph_shadowColorLight="#ff9b99"
+        app:neumorph_shapeType="flat" />
 
     <!--    tools:layout_editor_absoluteY="520dp"-->
 </androidx.constraintlayout.widget.ConstraintLayout>

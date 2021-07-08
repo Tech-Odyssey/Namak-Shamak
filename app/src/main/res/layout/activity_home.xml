@@ -5,52 +5,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home"
-    android:background="@drawable/tryscreen"
+    android:background="@drawable/tryscreen">
 
-    >
 
-    <EditText
-        android:id="@+id/searchtext"
-        android:layout_width="327dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="120dp"
-        android:backgroundTint="	#A9A9A9"
-        android:ems="10"
-        android:hint="Search Recipes"
-        android:inputType="textPersonName"
-        android:textColor="@color/black"
-        android:textColorHint="#A9A9A9"
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="307dp"
+        android:layout_height="73dp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132"
+        app:neumorph_shapeType="basin">
+
+        <EditText
+            android:id="@+id/searchtext"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#a9a9a9"
+            android:ems="10"
+            android:hint="   Search Recipes"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#a9a9a9"
+            android:textCursorDrawable="@drawable/cursor"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+    </soup.neumorphism.NeumorphCardView>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="169dp"
         android:layout_height="65dp"
         android:text="Choose the \nFood you Love"
-        android:textSize="24dp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/searchtext"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/neumorphCardView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.755" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="148dp"
         android:layout_height="36dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="208dp"
         android:text="Categories"
         android:textColor="@color/black"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.167"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchtext" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <HorizontalScrollView
         android:layout_width="366dp"
@@ -196,23 +209,22 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <ImageView
+    <soup.neumorphism.NeumorphFloatingActionButton
         android:id="@+id/searchbt"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="360dp"
-        tools:layout_editor_absoluteY="120dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:onClick="gotosearch"
+        app:layout_constraintBottom_toBottomOf="@+id/neumorphCardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185"
-        android:onClick="gotosearch"
-        />
+        app:layout_constraintStart_toEndOf="@+id/neumorphCardView"
 
-
+        app:layout_constraintTop_toTopOf="@+id/neumorphCardView"
+        app:layout_constraintVertical_bias="0.0"
+        app:neumorph_shapeType="flat"
+        app:srcCompat="@drawable/logo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
