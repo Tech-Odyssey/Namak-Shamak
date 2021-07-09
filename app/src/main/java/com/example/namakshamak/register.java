@@ -44,8 +44,13 @@ public class register extends AppCompatActivity {
     private EditText Name, Email, pass;
     private TextView TextView;
     private Button RegisterButton;
+
+    //for custom login method by password and email :))
     TextView mlogin;
+
+    //button for google sign in
     Button b1;
+    //button for facebook sign in
     private LoginButton loginButton;
     CallbackManager callbackManager;
 
@@ -53,7 +58,7 @@ public class register extends AppCompatActivity {
 
     //firebase auth instance
     private FirebaseAuth auth;
-
+    // google sign in client
     GoogleSignInClient mGoogleSignInClient;
 
 
@@ -61,12 +66,13 @@ public class register extends AppCompatActivity {
     protected void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
         setContentView(R.layout.activity_register);
-
+        // connection our instance buttons/textviews to the buttons/textviews on activity_register.xml
         Name = findViewById(R.id.editTextTextPersonName2);
         Email = findViewById(R.id.editTextTextPersonName3);
         pass = findViewById(R.id.editTextTextPassword3);
         TextView = findViewById(R.id.textView);
         RegisterButton = findViewById(R.id.button5);
+        //for custom login
         mlogin = findViewById(R.id.logindir);
 
 
@@ -75,6 +81,7 @@ public class register extends AppCompatActivity {
         callbackManager = CallbackManager.Factory.create();
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
 
+            //1st method for authorizing login through facebook
             @Override
             public void onSuccess(LoginResult loginResult) {
                 Log.d(TAG, "facebook:onSuccess:" + loginResult);
@@ -124,13 +131,13 @@ public class register extends AppCompatActivity {
 
 
     }
-
+    //creating/registering user through our email and password
     private void createUSer() {
         String email = Email.getText().toString();
         String password = pass.getText().toString();
 
         if (!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            if (!password.isEmpty()) {
+            if (!password.isEmpty() && password.length()>6) {
                 auth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
@@ -147,13 +154,14 @@ public class register extends AppCompatActivity {
                     }
                 });
             } else {
-                pass.setError("Empty fields are not allowed");
+                pass.setError("Password should greater than 6 characters");
             }
         } else if (email.isEmpty()) {
             Email.setError("Empty fields are not allowed");
         } else {
             Email.setError("Please enter correct email");
         }
+        //what happens after clicking on register button
         mlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -173,7 +181,7 @@ public class register extends AppCompatActivity {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
     }
-
+    // onActivityResult for google and facebook authorizing
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -194,7 +202,7 @@ public class register extends AppCompatActivity {
             }
         }
     }
-
+    // for google auth
     private void firebaseAuthWithGoogle(String idToken) {
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
         auth.signInWithCredential(credential)
@@ -219,7 +227,7 @@ public class register extends AppCompatActivity {
                     }
                 });
     }
-
+    // for facebook auth
     private void firebaseAuthWithFacebook(AccessToken token) {
         Log.d(TAG, "handleFacebookAccessToken:" + token);
         final AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());

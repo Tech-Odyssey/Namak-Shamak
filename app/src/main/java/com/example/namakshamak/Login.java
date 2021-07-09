@@ -25,6 +25,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class Login extends AppCompatActivity {
 
+    // instances for email and password login
     EditText mEmail, mPassword;
     Button mlogin_btn;
     TextView mCreateBtn,ResetPassword;
@@ -36,8 +37,11 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        // assigning respective buttons/textviews to their respective buttons/textviews on acitvity_login.xml
         mEmail = findViewById(R.id.editTextTextPersonName);
         mPassword = findViewById(R.id.editTextTextPassword);
+
+        //initializing firebase auth
         auth = FirebaseAuth.getInstance();
         FirebaseUser user = auth.getCurrentUser();
         if(user!=null){
@@ -48,6 +52,7 @@ public class Login extends AppCompatActivity {
         mCreateBtn = findViewById(R.id.signin);
         ResetPassword = findViewById(R.id.resetpass);
 
+        // what happens when user clicks on login button
         mlogin_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,12 +91,14 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
+
         mCreateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), register.class));
             }
         });
+        // to reset password ehen dumb fucks forget them
         ResetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
