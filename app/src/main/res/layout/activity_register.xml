@@ -8,7 +8,20 @@
     android:background="@drawable/login">
 
 
+    <Button
+        android:id="@+id/fblogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEMP FACEBOOK SIGN IN BUTTON"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.213" />
+
     <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView5"
         style="@style/Widget.Neumorph.CardView"
         android:layout_width="250dp"
         android:layout_height="70dp"
@@ -71,6 +84,7 @@
     </soup.neumorphism.NeumorphCardView>
 
     <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView6"
         style="@style/Widget.Neumorph.CardView"
         android:layout_width="250dp"
         android:layout_height="70dp"
@@ -85,7 +99,6 @@
 
         <EditText
             android:id="@+id/editTextTextPassword3"
-            android:textCursorDrawable="@drawable/cursor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#a9a9a9"
@@ -93,7 +106,8 @@
             android:hint="    Password"
             android:inputType="textPassword"
             android:textColor="@color/black"
-            android:textColorHint="#a9a9a9" />
+            android:textColorHint="#a9a9a9"
+            android:textCursorDrawable="@drawable/cursor" />
     </soup.neumorphism.NeumorphCardView>
 
     <soup.neumorphism.NeumorphButton

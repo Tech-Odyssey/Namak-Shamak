@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Namak Shamak</string>
+    <!-- For facebook -->
+    <string name="facebook_app_id">852232675720250</string>
+    <string name="fb_login_protocol_scheme">fb852232675720250</string>
     <!--//////////////////////BURGER//////////////////////////////////////-->
     <string-array name="namburger">
         <item>Borger</item>
