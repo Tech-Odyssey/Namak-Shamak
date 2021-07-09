@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".detailed"
-    android:background="@drawable/homescr"
+    android:background="@color/white"
 
     >
 
@@ -40,12 +40,11 @@
             <TextView
                 android:id="@+id/mainname"
                 android:layout_width="match_parent"
-                android:layout_height="59dp"
+                android:layout_height="84dp"
                 android:text="TextView"
-                android:textColor="@color/black"
-                android:textSize="48dp"
                 android:textAlignment="center"
-                />
+                android:textColor="@color/black"
+                android:textSize="32dp" />
 
             <Space
                 android:layout_width="match_parent"
@@ -54,16 +53,15 @@
             <TextView
                 android:id="@+id/main2"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="62dp"
                 android:text="TextView"
-                android:textColor="#696969"
-                android:textSize="32dp"
                 android:textAlignment="center"
-                />
+                android:textColor="#696969"
+                android:textSize="18dp" />
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="32dp" />
+                android:layout_height="17dp" />
 
             <TextView
                 android:id="@+id/main3"

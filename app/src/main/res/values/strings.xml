@@ -1,44 +1,36 @@
 <resources>
     <string name="app_name">Namak Shamak</string>
-    <!-- For facebook -->
     <string name="facebook_app_id">852232675720250</string>
     <string name="fb_login_protocol_scheme">fb852232675720250</string>
+
     <!--//////////////////////BURGER//////////////////////////////////////-->
     <string-array name="namburger">
-        <item>Borger</item>
-        <item>Borger2</item>
-        <item>Borger3</item>
-        <item>Borger4</item>
-        <item>Borger5</item>
-        <item>Borger6</item>
-        <item>Borger7</item>
+        <item>classic bacon and cheese burger.</item>
+        <item>Nacho cheeseburger</item>
+        <item>Veggie Indian burger</item>
+        <item>French onion cheeseburger</item>
+        <item>Lamb kebab burger</item>
     </string-array>
     <string-array name="recburger">
-        <item>Reciepe Here</item>
-        <item>Reciepe Here</item>
-        <item>Reciepe Here</item>
-        <item>Reciepe Here</item>
-        <item>Reciepe Here</item>
-        <item>Reciepe Here</item>
-        <item>Reciepe Here</item>
+        <item>onion finely chopped 1 garlic clove crushed,500 g beef mince,large handful fresh parsley finely chopped,1/2 cup fresh breadcrumbs,1 egg beaten,1-2 teaspoons salt to taste,black pepper to taste</item>
+        <item>2 beef burgers, 2 slices cheddar ,2 sesame seed burger buns ,2 tbsp guacamole ,2 tbsp chipotle or chilli mayo ,2 tbsp salsa, small handful salted nachos,2 small bunch coriander , leaves torn Here</item>
+        <item>Ingredients ,2 vegetarian bean burgers ,4 red onion ,V4 cucumber ,V½ large ripe tomato ,4 small bunch coriander ,2 seeded wholemeal burger buns ,2 tbsp raita ,2 tbsp mango chutney,20g spicy Bombay mix</item>
+        <item>Ingredients ,2 tbsp butter ,1 tbsp oil ,1 onion , thinly sliced ,½ tbsp light brown soft sugar,1 tsp cider vinegar ,1 tbsp wholegrain mustard ,2 beef burgers,2 slices gruyère ,2 brioche buns ,2 handfu watercress</item>
+        <item>Ingredients,2 tbsp fat-free yogurt 1 tbsp mayonnaise 1 small garlic clove grated V½ tbsp vegetable oil 2 lamb burgers 2 sesame seed burger buns 1 tomato , sliced 20g gherkins , sliced 1 red chilli , finely sliced leaves of 1 Baby Gem lettuce</item>
     </string-array>
     <string-array name="recburgerrec">
-        <item><![CDATA[
-    Step 1:\n
-    Process bread in a food processor until you have fine bread crumbs.\n
-Step 2:\n
-Stir bread crumbs, oats, salt, mustard, celery seed, and cumin together in a bowl. Mix chicken, onion, and egg together in a separate bowl; add bread crumb mixture to chicken mixture and mix. Divide and shape mixture into 7 patties.\n
-Step 3:\n
-Heat canola oil in a large skillet over medium heat. Cook patties in hot oil until browned each side and no longer pink the center, about 5 minutes per side. ]]>
-        </item>
-        <item>detailed Reciepe Here2</item>
-        <item>detailed Reciepe Here3</item>
-        <item>detailed Reciepe Here4</item>
-        <item>detailed Reciepe Here5</item>
-        <item>detailed Reciepe Here6</item>
-        <item>detailed Reciepe Here7</item>
+        <item> <![CDATA[ Time taken 40 mins.1. Fry the onion in a large frying pan in a splash of olive oil until golden brown.
+            Add the garlic and fry for another 30 seconds then remove from the heat. Allow to cool to room Temperature. 2. Mix the cooled onions with the beef, parsley, breadcrumbs, egg, salt and pepper. To test the seasoning, fry a teaspoon-full of the mixture in the pan you cooked the onions in.
+            Adjust the seasoning to taste.3. Divide the mixture into 5-6 (depending on how you big you want the patties), and form patties with wet hands.4. Place on a tray lined with baking paper and place in the fridge to chill for 30 minutes.5.]]></item>
+        <item> <![CDATA[Heat the grill to medium-high. Put the burgers on a baking sheet and grill for 5-8 mins on each side until cooked through. For the last minute, top the burgers with the cheese slices and grill until melted. Lightly toast the burger buns.
+            Divide the guacamole, burgers, chipotle or chilli mayo, salsa and nachos, broken up, between each bun. Finish with a sprinkling of torn coriander.]]></item>
+        <item> <![CDATA[Cook the vegetarian bean burgers following pack instructions. Finely chop the red onion, cucumber, tomato and coriander and mix together in a bowl.Lightly toast the burger buns. Divide the raita, burgers, mango chutney, the tomato, onion and cucumber salad and Bombay mix between each bun.]]></item>
+        <item> <![CDATA[ Put the butter and oil in a large non-stick frying.pan. Add the onion and fry over a medium heat for 15 mins or until golden and sticky. Stir through the light brown soft sugar, cider vinegar and wholegrain
+mustard. Heat the grill to medium-high.Put the beef burgers on a baking sheet and grill on each side for 5-8 mins or until cooked through. For the last minute, top the burgers with the gruyère and grill until bubbling and melted. Lightly toast the brioche buns. Top the buns with the burgers, then the sticky onions and divide the watercress between each.]]></item>
+        <item> <![CDATA[Combine the yogurt with the mayonnaise and grated garlic in a small bowl. Heat the vegetable oil in a non-stick frying.pan over a medium heat, add the lamb burgers and fry for around 10 mins, turning over halfway through, until piping hot in the centre. Lightly toast the burger
+buns. Divide the sliced tomato, sliced gherkins, the burgers, some garlic sauce,chilli and the lettuce leaves between each burger bun, then enjoy immediately.]]></item>
     </string-array>
-    <!--//////////////////////BURGER//////////////////////////////////////-->
+    !--//////////////////////BURGER//////////////////////////////////////-->
     <!--    ////////////////////////NOODles\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
     <string-array name="namnoodles">
         <item>Noodle</item>
@@ -129,4 +121,3 @@ Heat canola oil in a large skillet over medium heat. Cook patties in hot oil unt
         <item>time/recipe here</item>
     </string-array>
 </resources>
-
