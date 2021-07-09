@@ -1,6 +1,7 @@
 package com.example.namakshamak;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -13,6 +14,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -27,21 +33,19 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
-
-
 
 public class register extends AppCompatActivity {
 
     public static final String TAG1 = "TAG";
     public static final String TAG = "TAG";
     // email password reg
-    private EditText Name,Email,pass;
+    private EditText Name, Email, pass;
     private TextView TextView;
     private Button RegisterButton;
     TextView mlogin;
     Button b1;
+    private LoginButton loginButton;
+    CallbackManager callbackManager;
 
     int RC_SIGN_IN = 65;
 
@@ -52,7 +56,7 @@ public class register extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstance){
+    protected void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
         setContentView(R.layout.activity_register);
 
@@ -61,7 +65,30 @@ public class register extends AppCompatActivity {
         pass = findViewById(R.id.editTextTextPassword3);
         TextView = findViewById(R.id.textView);
         RegisterButton = findViewById(R.id.button5);
-        mlogin = findViewById(R.id.login);
+        mlogin = findViewById(R.id.logindir);
+
+
+        //facebook button linking
+        loginButton = findViewById(R.id.login_button);
+        callbackManager = CallbackManager.Factory.create();
+        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                Log.d("TAG", "onSuccess" + loginResult.getAccessToken().getUserId());
+
+            }
+
+            @Override
+            public void onCancel() {
+
+            }
+
+            @Override
+            public void onError(FacebookException error) {
+
+            }
+        });
+
 
         //linking buttons for google
         b1 = findViewById(R.id.button2);
@@ -79,8 +106,7 @@ public class register extends AppCompatActivity {
                 .requestEmail()
                 .build();
 
-        mGoogleSignInClient = GoogleSignIn.getClient(this,gso);
-
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
 
         RegisterButton.setOnClickListener(new View.OnClickListener() {
@@ -95,13 +121,14 @@ public class register extends AppCompatActivity {
 
 
     }
-    private void createUSer(){
+
+    private void createUSer() {
         String email = Email.getText().toString();
         String password = pass.getText().toString();
 
-        if(!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            if(!password.isEmpty()){
-                auth.createUserWithEmailAndPassword(email,password)
+        if (!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            if (!password.isEmpty()) {
+                auth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -116,18 +143,18 @@ public class register extends AppCompatActivity {
 
                     }
                 });
-            }else{
+            } else {
                 pass.setError("Empty fields are not allowed");
             }
-        }else if (email.isEmpty()){
+        } else if (email.isEmpty()) {
             Email.setError("Empty fields are not allowed");
-        }else{
+        } else {
             Email.setError("Please enter correct email");
         }
         mlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Login.class));
+                startActivity(new Intent(getApplicationContext(), Login.class));
             }
         });
 
@@ -135,7 +162,7 @@ public class register extends AppCompatActivity {
 
 
     public void gotlog(View view) {
-        startActivity(new Intent(getApplicationContext(),Login.class));
+        startActivity(new Intent(getApplicationContext(), Login.class));
     }
 
     // signing in using google
@@ -162,6 +189,7 @@ public class register extends AppCompatActivity {
             }
         }
     }
+
     private void firebaseAuthWithGoogle(String idToken) {
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
         auth.signInWithCredential(credential)
@@ -173,7 +201,7 @@ public class register extends AppCompatActivity {
                             Log.d(TAG, "signInWithCredential:success");
                             FirebaseUser user = auth.getCurrentUser();
 
-                            Intent intent = new Intent(register.this,Home.class);
+                            Intent intent = new Intent(register.this, Home.class);
                             startActivity(intent);
                             Toast.makeText(register.this, "Sign in with google", Toast.LENGTH_SHORT).show();
 
@@ -187,4 +215,9 @@ public class register extends AppCompatActivity {
                 });
     }
 
+    /*protected void onActivityResult2(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        callbackManager.onActivityResult(requestCode, resultCode, data);
+
+    }*/
 }

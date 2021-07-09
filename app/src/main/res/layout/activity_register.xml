@@ -131,7 +131,7 @@
         />
 
     <TextView
-        android:id="@+id/login"
+        android:id="@+id/logindir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already Registered? Log In"
@@ -146,17 +146,45 @@
         android:onClick="gotlog"
         />
 
-    <Button
+    <com.shobhitpuri.custombuttons.GoogleSignInButton
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="temp google sign in button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="250dp"
+        android:layout_height="67dp"
+        android:layout_centerInParent="true"
+        android:text="@string/google_sign_up"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.143" />
+        app:layout_constraintVertical_bias="0.67" />
+
+    <TextView
+        android:id="@+id/or1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="#050505"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <TextView
+        android:id="@+id/or2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="#050505"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258"
+
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
