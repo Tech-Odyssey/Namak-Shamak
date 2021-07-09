@@ -7,11 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Home extends AppCompatActivity {
     EditText searchtext;
     Button searchbt;
+    private ImageView logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +23,16 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         searchtext=findViewById(R.id.searchtext);
 
+        logout = findViewById(R.id.imageView);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                logoutuser();
+            }
+        });
+
     }
+
 
     public void gotocatbur(View view) {
         Intent iburr= new Intent(Home.this,cat_burr.class);
@@ -64,5 +77,10 @@ public class Home extends AppCompatActivity {
         intent12.putExtra("images",R.drawable.burger);
         intent12.putExtra("data3","Text3");
         startActivity(intent12);
+    }
+    public void logoutuser() {
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(Home.this, MainActivity.class));
+        finish();
     }
 }

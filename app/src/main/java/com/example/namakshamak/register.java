@@ -11,6 +11,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +28,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
@@ -34,6 +36,11 @@ import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class register extends AppCompatActivity {
@@ -44,6 +51,11 @@ public class register extends AppCompatActivity {
     private EditText Name, Email, pass;
     private TextView TextView;
     private Button RegisterButton;
+
+    private ImageView logout;
+
+    //userID
+    String userID;
 
     //for custom login method by password and email :))
     TextView mlogin;
@@ -61,6 +73,9 @@ public class register extends AppCompatActivity {
     // google sign in client
     GoogleSignInClient mGoogleSignInClient;
 
+    //firestore
+    FirebaseFirestore firestore;
+
 
     @Override
     protected void onCreate(Bundle savedInstance) {
@@ -72,8 +87,13 @@ public class register extends AppCompatActivity {
         pass = findViewById(R.id.editTextTextPassword3);
         TextView = findViewById(R.id.textView);
         RegisterButton = findViewById(R.id.button5);
+        logout = findViewById(R.id.imageView);
         //for custom login
         mlogin = findViewById(R.id.logindir);
+
+        //firestore instantiation
+        firestore = FirebaseFirestore.getInstance();
+
 
 
         //facebook button linking
@@ -135,6 +155,7 @@ public class register extends AppCompatActivity {
     private void createUSer() {
         String email = Email.getText().toString();
         String password = pass.getText().toString();
+        String fullname = Name.getText().toString().trim();
 
         if (!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             if (!password.isEmpty() && password.length()>6) {
@@ -143,6 +164,20 @@ public class register extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 Toast.makeText(register.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
+                                //
+                                userID = auth.getCurrentUser().getUid();
+                                DocumentReference documentReference = firestore.collection("users").document(userID);
+                                Map<String,Object> user = new HashMap<>();
+                                user.put("fname",Name);
+                                user.put("email",email);
+                                documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void unused) {
+                                        Log.d("TAG","onSuccess: user profile created for"+userID);
+                                    }public void onFailure(@NonNull Exception e){
+                                        Log.d("TAG","onFailure"+e.toString());
+                                    }
+                                });
                                 startActivity(new Intent(register.this, MainActivity.class));
                                 finish();
                             }
