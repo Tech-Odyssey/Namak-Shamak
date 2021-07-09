@@ -229,7 +229,10 @@
         app:neumorph_shapeType="flat"
         app:srcCompat="@drawable/logo" />
 
-    <ImageView
+    <soup.neumorphism.NeumorphFloatingActionButton
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        app:neumorph_shapeType="flat"
+
         android:id="@+id/imageView"
         android:layout_width="70dp"
         android:layout_height="70dp"
