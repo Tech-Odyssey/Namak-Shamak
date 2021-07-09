@@ -52,5 +52,7 @@ dependencies {
 
     implementation 'com.shobhitpuri.custombuttons:google-signin:1.1.0'
 
+    implementation 'com.github.Hitomis:CircleMenu:v1.1.0'
+
 
 }

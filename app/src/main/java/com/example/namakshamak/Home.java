@@ -1,8 +1,10 @@
 package com.example.namakshamak;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,17 +13,67 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.hitomi.cmlibrary.CircleMenu;
+import com.hitomi.cmlibrary.OnMenuSelectedListener;
 
 public class Home extends AppCompatActivity {
     EditText searchtext;
     Button searchbt;
     private ImageView logout;
 
+    //for circle menu
+    CircleMenu circleMenu;
+    ConstraintLayout constraintLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         searchtext=findViewById(R.id.searchtext);
+
+        //assigning the instance to their respective ..
+        circleMenu = findViewById(R.id.circle_menu);
+        constraintLayout = findViewById(R.id.constraint_layout);
+        circleMenu.setMainMenu(Color.parseColor("#DB1D93"),R.mipmap.list,R.mipmap.multiply)
+                .addSubMenu(Color.parseColor("#E61DDB"),R.mipmap.home)
+                .addSubMenu(Color.parseColor("#3B20C9"),R.mipmap.add)
+                .addSubMenu(Color.parseColor("#fff591"),R.mipmap.account)
+                .addSubMenu(Color.parseColor("#B7241D"),R.mipmap.gear)
+                .addSubMenu(Color.parseColor("#397D20"),R.mipmap.logout)
+                .setOnMenuSelectedListener(new OnMenuSelectedListener() {
+                    @Override
+                    public void onMenuSelected(int index) {
+                        switch (index){
+                            case 0:
+                                Toast.makeText(Home.this, "", Toast.LENGTH_SHORT).show();
+                                constraintLayout.setBackgroundColor(Color.parseColor("#9B1DDB"));
+                                Intent intent = new Intent(Home.this, Home.class);
+                                startActivity(intent);
+                                break;
+                            case 1:
+                                Toast.makeText(Home.this, "Add recipe will be available soon", Toast.LENGTH_SHORT).show();
+                                constraintLayout.setBackgroundColor(Color.parseColor("#ecffb"));
+                                Intent intent3 = new Intent(Home.this, Home.class);
+                                startActivity(intent3);
+                                break;
+                            case 2:
+                                Toast.makeText(Home.this, "Your profile is being scanned by CIA", Toast.LENGTH_SHORT).show();
+                                constraintLayout.setBackgroundColor(Color.parseColor("#96f7d2"));
+                                break;
+                            case 3:
+                                Toast.makeText(Home.this, "Settings is currently on vacation", Toast.LENGTH_SHORT).show();
+                                constraintLayout.setBackgroundColor(Color.parseColor("#fac4a2"));
+                                break;
+                            case 4:
+                                Toast.makeText(Home.this, "You have been logged out bye bye", Toast.LENGTH_SHORT).show();
+                                constraintLayout.setBackgroundColor(Color.parseColor("#d3cde6"));
+                                FirebaseAuth.getInstance().signOut();
+                                Intent intent2 = new Intent(Home.this,MainActivity.class);
+                                startActivity(intent2);
+                                break;
+                        }
+                    }
+                });
 
         logout = findViewById(R.id.imageView);
         logout.setOnClickListener(new View.OnClickListener() {
