@@ -180,35 +180,45 @@
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/idli" />
+                app:srcCompat="@drawable/idli"
+                android:onClick="gotoidli"
+                />
 
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/kebabburger" />
+                app:srcCompat="@drawable/kebabburger"
+                android:onClick="gotokebbur"
+                />
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ramen" />
+                app:srcCompat="@drawable/ramen"
+                android:onClick="gotoramen"
+                />
 
             <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/recsalad" />
+                app:srcCompat="@drawable/recsalad"
+                android:onClick="gotosal"
+                />
 
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/recbiryani" />
+                app:srcCompat="@drawable/recbiryani"
+                android:onClick="gotobiryani"
+                />
         </LinearLayout>
     </HorizontalScrollView>
 

@@ -160,4 +160,80 @@ buns. Divide the sliced tomato, sliced gherkins, the burgers, some garlic sauce,
         <item>p7</item>
         <item>p8</item>
     </string-array>
+
+
+    <string name="recchickencurry"> <![CDATA[
+Step 1\n
+Heat 7 teaspoons oil in a pan over medium heat. Add onions, chile peppers, cumin seeds, and bay leaves. Stir until beginning to brown, 5 to 7 minutes. Add ginger-garlic paste; cook, stirring well to make sure it completely dissolves, 2 to 3 minutes. Cover and cook until onions and chiles soften, about 2 minutes more.
+
+Step 2\n
+Add garam masala, chile powder, coriander, and turmeric. Cook and stir until mixture is the texture of gravy and oil separates, about 2 minutes.
+
+Step 3\n
+Stir in tomatoes and cook until soft, about 5 minutes. Cover the pan and cook for 2 minutes. Uncover and continue to cook until reduced, 3 to 4 minutes more. Set aside and keep warm.
+
+Step 4\n
+Heat remaining 2 teaspoons oil in a large pan over medium heat. Add chicken and season with salt. Cook until browned, 5 to 7 minutes per side. Stir in curry mixture until well combined. Reduce heat to low, cover, and cook for 5 minutes.
+
+Step 5\n
+Pour in water; stir for 30 seconds. Season with salt. Cover and cook over medium heat until chicken thighs are no longer pink in the centers and curry thickens, about 15 minutes more. Remove from heat and let stand for 15 minutes more. Garnish with cilantro.
+    ]]></string>
+
+    <string name="recidli"><![CDATA[
+Soaking Rice And Lentils:\n
+
+Pick and rinse both the regular rice and parboiled rice.
+Rinse the poha and add to the rice.
+Add water. Mix well. Cover and keep the rice + poha to soak for 4 to 5 hours.
+In a separate bowl, rinse the urad dal and methi seeds a couple of times.
+Soak the urad dal with methi seeds separately in water for 4 to 5 hours.
+Making Idli Batter:\n
+Drain the soaked urad dal. Reserve the water.
+Grind the urad dal, methi seed with ¼ cup of the reserved water for some seconds. Then add remaining ¼ cup water. Grind till you get a smooth and fluffy batter.
+Remove the urad dal batter in a bowl and keep aside.
+
+Grind the rice in batches to make a smooth batter.
+Mix both the batters together in a large bowl or pan. Add salt and mix well.
+Cover and let the batter ferment for 8 to 9 hours or more if required.
+After the fermentation process is over, the idli batter will become double in size and rise.
+\nSteaming Idli:\n
+Grease the idli moulds.
+Pour the batter in the moulds and steam the idli in a pressure cooker or steamer.
+If using pressure cooker remove the vent weight (whistle).
+Steam for 12 to 15 mins or until the idli is done.
+Serve the steaming hot idli with coconut chutney and sambar.
+Remaining batter can be stored in the refrigerator for a couple of days.
+
+]]></string>
+    <string name="recbiryanirec"><![CDATA[
+      Step 1\n
+Place black peppercorns, cloves, cardamom, cinnamon sticks, star anise, and kala jeera in a spice grinder; grind into a fine powder.
+\n
+Step 2\n
+Place cilantro and mint leaves in a food processor; pulse until coarsely chopped.
+\n
+Step 3\n
+Combine spice powder, cilantro-mint mixture, yogurt, lemon juice, ginger-garlic paste, chile powder, biryani masala powder, and turmeric in a large bowl. Add chicken; turn to coat evenly. Cover with plastic wrap and let marinate in the refrigerator, about 2 hours.
+\n
+Step 4\n
+Bring water and rice to a boil in a saucepan; add 2 bay leaves. Reduce heat to medium-low, cover, and simmer until rice is partially cooked through and still firm, about 5 minutes. Drain.
+\n
+Step 5\n
+Combine milk and saffron in a small bowl; stir to combine.
+\n
+Step 6\n
+Heat ghee in a large pot with a tight-fitting lid over medium-high heat. Add onions; cook and stir until golden brown, about 15 minutes. Drain on paper towels. Reduce heat to low. Add remaining 2 bay leaves and chile peppers; cook and stir until fragrant, 1 to 2 minutes. Carefully remove 1 tablespoon of ghee from the pot; set it aside.
+\n
+Step 7\n
+Wipe excess marinade off the chicken, discarding marinade, and add to the pot. Cook over medium heat until no longer pink, about 2 minutes per side. Spread drained rice on top. Sprinkle onions on top of the rice. Drizzle reserved ghee and saffron milk over onions and rice.
+\n
+Step 8\n
+Cover the pot and cook over high heat, about 8 minutes. Reduce heat to low and continue cooking, about 5 minutes. Remove from heat and let stand, covered, until rice is tender and an instant-read thermometer inserted into the chicken reads 165 degrees F (74 degrees C), about 15 minutes.
+    ]]></string>
+    <string name="reckebabburbur"><![CDATA[
+       1. Combine the yogurt with the mayonnaise and grated garlic in a small bowl.\n
+2. Heat the vegetable oil in a non-stick frying pan over a medium heat, add the lamb burgers and fry for around 10 mins, turning over halfway through, until piping hot in the centre.\n
+3. Lightly toast the burger buns.\n
+4. Divide the sliced tomato, sliced gherkins, the burgers, some garlic sauce, chilli and the lettuce leaves between each burger bun, then enjoy immediately.\n
+    ]]></string>
 </resources>
