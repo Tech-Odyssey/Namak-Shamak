@@ -241,20 +241,6 @@
         app:neumorph_shapeType="flat"
         app:srcCompat="@drawable/logo" />
 
-    <soup.neumorphism.NeumorphFloatingActionButton
-        android:id="@+id/imageView"
-        style="@style/Widget.Neumorph.FloatingActionButton"
-
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.997"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.275"
-        app:neumorph_shapeType="flat"
-        app:srcCompat="@drawable/goout" />
 
     <com.hitomi.cmlibrary.CircleMenu
         android:id="@+id/circle_menu"
@@ -262,10 +248,10 @@
         android:layout_height="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintVertical_bias="0.178" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,8 +19,6 @@ import com.hitomi.cmlibrary.OnMenuSelectedListener;
 public class Home extends AppCompatActivity {
     EditText searchtext;
     Button searchbt;
-    private ImageView logout;
-
     //for circle menu
     CircleMenu circleMenu;
     ConstraintLayout constraintLayout;
@@ -46,25 +44,25 @@ public class Home extends AppCompatActivity {
                         switch (index){
                             case 0:
                                 Toast.makeText(Home.this, "Home", Toast.LENGTH_SHORT).show();
-                                constraintLayout.setBackgroundColor(Color.parseColor("#9B1DDB"));
+                                constraintLayout.setBackgroundColor(Color.parseColor("#FFFFFF"));
                                 Intent intent = new Intent(Home.this, Home.class);
                                 startActivity(intent);
                                 break;
                             case 1:
                                 Toast.makeText(Home.this, "Add recipe will be available soon", Toast.LENGTH_SHORT).show();
-                                constraintLayout.setBackgroundColor(Color.parseColor("#333F91"));
+                                constraintLayout.setBackgroundColor(Color.parseColor("#FFFFFF"));
                                 break;
                             case 2:
                                 Toast.makeText(Home.this, "Your profile is being scanned by CIA", Toast.LENGTH_SHORT).show();
-                                constraintLayout.setBackgroundColor(Color.parseColor("#96f7d2"));
+                                constraintLayout.setBackgroundColor(Color.parseColor("#FFFFFF"));
                                 break;
                             case 3:
                                 Toast.makeText(Home.this, "Settings is currently on vacation", Toast.LENGTH_SHORT).show();
-                                constraintLayout.setBackgroundColor(Color.parseColor("#fac4a2"));
+                                constraintLayout.setBackgroundColor(Color.parseColor("#FFFFFF"));
                                 break;
                             case 4:
                                 Toast.makeText(Home.this, "You have been logged out bye bye", Toast.LENGTH_SHORT).show();
-                                constraintLayout.setBackgroundColor(Color.parseColor("#d3cde6"));
+                                constraintLayout.setBackgroundColor(Color.parseColor("#FFFFFF"));
                                 FirebaseAuth.getInstance().signOut();
                                 Intent intent2 = new Intent(Home.this,MainActivity.class);
                                 startActivity(intent2);
@@ -72,14 +70,6 @@ public class Home extends AppCompatActivity {
                         }
                     }
                 });
-
-        logout = findViewById(R.id.imageView);
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                logoutuser();
-            }
-        });
 
     }
 
@@ -235,9 +225,5 @@ public class Home extends AppCompatActivity {
         intent12.putExtra("data3",getResources().getString(R.string.recbiryanirec));
         startActivity(intent12);
     }
-    public void logoutuser() {
-        FirebaseAuth.getInstance().signOut();
-        startActivity(new Intent(Home.this, MainActivity.class));
-        finish();
-    }
+
 }

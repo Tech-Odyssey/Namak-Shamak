@@ -52,7 +52,7 @@ public class register extends AppCompatActivity {
     private TextView TextView;
     private Button RegisterButton;
 
-    private ImageView logout;
+
 
     //userID
     String userID;
@@ -87,7 +87,6 @@ public class register extends AppCompatActivity {
         pass = findViewById(R.id.editTextTextPassword3);
         TextView = findViewById(R.id.textView);
         RegisterButton = findViewById(R.id.button5);
-        logout = findViewById(R.id.imageView);
         //for custom login
         mlogin = findViewById(R.id.logindir);
 
