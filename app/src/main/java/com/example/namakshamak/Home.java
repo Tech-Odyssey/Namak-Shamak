@@ -45,16 +45,14 @@ public class Home extends AppCompatActivity {
                     public void onMenuSelected(int index) {
                         switch (index){
                             case 0:
-                                Toast.makeText(Home.this, "", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Home.this, "Home", Toast.LENGTH_SHORT).show();
                                 constraintLayout.setBackgroundColor(Color.parseColor("#9B1DDB"));
                                 Intent intent = new Intent(Home.this, Home.class);
                                 startActivity(intent);
                                 break;
                             case 1:
                                 Toast.makeText(Home.this, "Add recipe will be available soon", Toast.LENGTH_SHORT).show();
-                                constraintLayout.setBackgroundColor(Color.parseColor("#ecffb"));
-                                Intent intent3 = new Intent(Home.this, Home.class);
-                                startActivity(intent3);
+                                constraintLayout.setBackgroundColor(Color.parseColor("#333F91"));
                                 break;
                             case 2:
                                 Toast.makeText(Home.this, "Your profile is being scanned by CIA", Toast.LENGTH_SHORT).show();
