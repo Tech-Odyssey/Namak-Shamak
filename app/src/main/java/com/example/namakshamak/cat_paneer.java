@@ -18,7 +18,7 @@ public class cat_paneer extends AppCompatActivity {
         recyclerView= findViewById(R.id.recyclerView);
         pn=getResources().getStringArray(R.array.nampan);
         pr=getResources().getStringArray(R.array.recpan);
-        brr=getResources().getStringArray(R.array.recburgerrec);
+        brr=getResources().getStringArray(R.array.recpanrec);
         Myadaptar myadaptar = new Myadaptar(this,pn,pr,images,brr);
         recyclerView.setAdapter(myadaptar);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

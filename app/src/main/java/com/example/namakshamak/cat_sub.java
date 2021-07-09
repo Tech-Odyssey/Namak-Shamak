@@ -18,7 +18,7 @@ public class cat_sub extends AppCompatActivity {
         recyclerView= findViewById(R.id.recyclerView);
         sun=getResources().getStringArray(R.array.namsub);
         sur=getResources().getStringArray(R.array.recsub);
-        brr=getResources().getStringArray(R.array.recburgerrec);
+        brr=getResources().getStringArray(R.array.recsubrec);
         Myadaptar myadaptar = new Myadaptar(this,sun,sur,images,brr);
         recyclerView.setAdapter(myadaptar);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

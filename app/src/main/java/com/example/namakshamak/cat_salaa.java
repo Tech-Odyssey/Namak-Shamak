@@ -18,7 +18,7 @@ public class cat_salaa extends AppCompatActivity {
         recyclerView= findViewById(R.id.recyclerView);
         sn=getResources().getStringArray(R.array.namsala);
         sr=getResources().getStringArray(R.array.recsala);
-        brr=getResources().getStringArray(R.array.recburgerrec);
+        brr=getResources().getStringArray(R.array.recsalarec);
         Myadaptar myadaptar = new Myadaptar(this,sn,sr,images,brr);
         recyclerView.setAdapter(myadaptar);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
