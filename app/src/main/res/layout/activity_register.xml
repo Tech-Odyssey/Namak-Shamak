@@ -42,6 +42,7 @@
     </soup.neumorphism.NeumorphCardView>
 
     <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView2"
         style="@style/Widget.Neumorph.CardView"
         android:layout_width="250dp"
         android:layout_height="70dp"
@@ -56,7 +57,6 @@
 
         <EditText
             android:id="@+id/editTextTextPersonName3"
-            android:textCursorDrawable="@drawable/cursor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#a9a9a9"
@@ -65,6 +65,7 @@
             android:inputType="textPersonName"
             android:textColor="@color/black"
             android:textColorHint="#a9a9a9"
+            android:textCursorDrawable="@drawable/cursor"
             tools:layout_editor_absoluteX="93dp"
             tools:layout_editor_absoluteY="286dp" />
     </soup.neumorphism.NeumorphCardView>
@@ -129,6 +130,18 @@
         android:clickable="true"
         android:onClick="gotlog"
         />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="temp google sign in button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
