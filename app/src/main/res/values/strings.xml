@@ -12,7 +12,7 @@
         <item>Lamb kebab burger</item>
     </string-array>
     <string-array name="recburger">
-        <item>onion finely chopped 1 garlic clove crushed,500 g beef mince,large handful fresh parsley finely chopped,1/2 cup fresh breadcrumbs,1 egg beaten,1-2 teaspoons salt to taste,black pepper to taste</item>
+        <item>onion finely chopped 1 garlic clove crushed,500 g beef mince,large handful fresh parsley finely chopped,0.5 cup fresh breadcrumbs,1 egg beaten, 2 teaspoons salt to taste,black pepper to taste</item>
         <item>2 beef burgers, 2 slices cheddar ,2 sesame seed burger buns ,2 tbsp guacamole ,2 tbsp chipotle or chilli mayo ,2 tbsp salsa, small handful salted nachos,2 small bunch coriander , leaves torn Here</item>
         <item>Ingredients ,2 vegetarian bean burgers ,4 red onion ,V4 cucumber ,V½ large ripe tomato ,4 small bunch coriander ,2 seeded wholemeal burger buns ,2 tbsp raita ,2 tbsp mango chutney,20g spicy Bombay mix</item>
         <item>Ingredients ,2 tbsp butter ,1 tbsp oil ,1 onion , thinly sliced ,½ tbsp light brown soft sugar,1 tsp cider vinegar ,1 tbsp wholegrain mustard ,2 beef burgers,2 slices gruyère ,2 brioche buns ,2 handfu watercress</item>
@@ -156,95 +156,419 @@ Heat oil in a large skillet over medium heat. Saute garlic until tender. Stir in
     <!--    //////////////////NOODLES//////////////-->
     <!--    /////////////////////SALAD\\\\\\\\\\\\\\\\\\\\\-->
     <string-array name="namsala">
-        <item>Salad1</item>
-        <item>Salad2</item>
-        <item>Salad3</item>
-        <item>Salad4</item>
-        <item>Salad5</item>
-        <item>Salad6</item>
-        <item>Salad7</item>
+        <item>Cornucopia Salad</item>
+        <item>Cilantro-Lime Steak Salad</item>
+        <item>Fugi Salad</item>
+        <item>Fabulous Fruit and Feta Salad</item>
+        <item>Creamy Broccoli Salad</item>
+        <item>Potato Salad</item>
+
     </string-array>
     <string-array name="recsala">
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
+        <item>¼ cup sliced almonds,
+,1 tablespoon white sugar
+,1 head red leaf lettuce, torn
+,3 green onions, chopped
+,1 Granny Smith apple, cored and chopped
+,1 avocado - peeled, pitted, and chopped
+,½ cup dried cranberries
+,¼ cup crumbled blue cheese
+</item>
+        <item>2 teaspoons seeded and minced jalapeno pepper,
+,1 clove garlic
+,¾ teaspoon minced fresh ginger
+,⅓ cup lime juice
+,¼ cup packed cilantro leaves
+,2 tablespoons honey
+,2 teaspoons balsamic vinegar
+,½ teaspoon salt, or to taste
+,⅓ cup extra-virgin olive oil
+</item>
+        <item>2 tablespoons butter,
+,¾ cup blanched slivered almonds,
+½ cup sesame seeds,
+1 medium head cabbage, chopped,
+8 green onion, chopped,
+2 (3 ounce) packages ramen noodles,
+½ cup vegetable oil,
+½ cup white sugar,
+⅓ cup rice wine vinegar,
+¼ teaspoon ground black pepper,
+2 teaspoons salt,
+</item>
+        <item>1 (10 ounce) package mixed salad greens,
+1 (11 ounce) can mandarin oranges, drained,
+1 cup coarsely chopped walnuts, toasted,
+½ cup thinly sliced red onion,
+1 (4 ounce) package feta cheese, crumbled,
+¾ cup raspberry vinaigrette dressing,
+freshly cracked black pepper to taste,
+</item>
+        <item>8 slices bacon,
+1 pound fresh broccoli, cut into florets,
+½ small red onion, chopped,
+1 cup shredded mozzarella cheese,
+½ cup mayonnaise,
+¼ cup white sugar,1 tablespoon white wine vinegar,
+</item>
+        <item>5 pounds red potatoes, chopped,
+3 cups mayonnaise,
+2 cups finely chopped pickles,
+5 hard-cooked eggs, chopped,
+½ cup chopped red onion,
+½ cup chopped celery,
+3 tablespoons prepared mustard,
+1 tablespoon apple cider vinegar,
+1 teaspoon salt, or to taste,
+½ teaspoon ground black pepper,
+</item>
+
     </string-array>
     <string-array name="recsalarec">
-        <item>s1</item>
-        <item>s2</item>
-        <item>s3</item>
-        <item>s4</item>
-        <item>s5</item>
-        <item>s6</item>
-        <item>s7</item>
+        <item><![CDATA[
+Step 1\n
+Place the almonds and 1 tablespoon of sugar in a small skillet over medium-low heat, and cook and stir until the sugar melts and the almonds brown, watching carefully to avoid burning. Remove from heat and allow to cool.
+\n
+Step 2\n
+In a large salad bowl, mix the lettuce, green onions, apple, avocado, dried cranberries, blue cheese, and cooked almonds.
+\n
+Step 3\n
+Whisk together the vinegar, 2 teaspoons of sugar, and salt and pepper in a bowl, and stir in the vegetable oil. Pour the dressing over the salad, and gently toss to combine.
+
+]]></item>
+        <item><![CDATA[
+Step 1\n
+To make the dressing, blend jalapeno, garlic, and ginger in a blender until finely chopped. Add lime juice, cilantro, honey, balsamic, and salt; pulse to blend. With blender running, drizzle in oil until well incorporated.
+\n
+Step 2\n
+Preheat oven broiler. Season steak with salt and black pepper, then transfer to a foil-lined baking sheet.
+\n
+Step 3\n
+Broil 4 inches from heat until an instant-read thermometer inserted into the center registers 135 degrees F (57 degrees C) for medium-rare, 3 to 4 minutes per side. Let rest about 10 minutes, then thinly slice against the grain.
+\n
+Step 4\n
+Stir together corn, bell pepper, red onion, tomato, and jalapeno (if using) in a bowl.
+\n
+Step 5\n
+Divide lettuce among 4 plates; drizzle each with about 2 tablespoons dressing. Top with steak slices, then with corn mixture. Sprinkle with feta and garnish with chips.
+]]></item>
+        <item><![CDATA[
+Step 1\n
+In a skillet over low heat, melt the butter or margarine; add the almonds and sesame seeds. Cook until lightly toasted.
+\n
+Step 2\n
+In a large bowl, combine the cabbage, onions, almonds, sesame seeds and broken uncooked ramen noodles.
+\n
+Step 3\n
+Wisk together the oil, sugar, vinegar, pepper and salt. Pour over salad, toss, and serve.
+
+]]></item>
+        <item><![CDATA[
+Step 1\n
+Combine salad greens, mandarin oranges, walnuts, onion, and feta cheese in a large bowl. Drizzle raspberry vinaigrette over salad; toss to combine. Season with black pepper.
+]]></item>
+        <item><![CDATA[
+Step 1\n
+Place bacon in a large skillet and cook over medium-high heat, turning occasionally, until evenly browned, about 10 minutes. Drain bacon slices on paper towels; crumble when cooled.
+\n
+Step 2\n
+Mix bacon, broccoli, onion, and mozzarella cheese in a bowl.
+\n
+Step 3\n
+Whisk mayonnaise, sugar, and vinegar in a small bowl until sugar dissolves and dressing is smooth; pour over broccoli mixture. Toss to coat.
+]]></item>
+        <item><![CDATA[
+Step 1\n
+Place potatoes into a large pot and cover with salted water; bring to a boil. Reduce heat to medium-low and simmer until tender, about 10 minutes. Drain. Return potatoes to empty pot to dry while you mix the dressing. Sprinkle with salt.
+\n
+Step 2\n
+Stir mayonnaise, pickles, hard-cooked eggs, red onion, celery, mustard, cider vinegar, 1 teaspoon salt, and pepper together in a large bowl. Fold potatoes into the mayonnaise mixture. Allow to chill at least six hours, or overnight, before serving.
+
+]]></item>
+
     </string-array>
     <!--    /////////////////////SALAD\\\\\\\\\\\\\\\\\\\\\-->
+
     <!--    /////////////////////Subway\\\\\\\\\\\\\\\\\\\\\-->
     <string-array name="namsub">
-        <item>Subway1</item>
-        <item>Subway2</item>
-        <item>Subway3</item>
-        <item>Subway4</item>
-        <item>Subway5</item>
-        <item>Subway6</item>
-        <item>Subway7</item>
-        <item>Subway8</item>
+        <item>Cuban Midnight Sandwich</item>
+        <item>The Super Sandwich</item>
+        <item>Italian Subs</item>
+        <item>Spicy Veggie Sandwich</item>
+        <item>Grilled Chicken and Sun-Dried Tomato Subs</item>
+        <item>Grilled Tofu Sandwich</item>
+        <item>Turkey and Feta Grilled Sandwich</item>
     </string-array>
     <string-array name="recsub">
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
+        <item>1 cup mayonnaise,
+5 tablespoons Italian dressing,
+4 hoagie rolls, split lengthwise,
+4 tablespoons prepared mustard,
+½ pound thinly sliced deli turkey meat,
+½ pound thinly sliced cooked ham,
+½ pound thinly sliced Swiss cheese,
+1 cup dill pickle slices,
+½ cup olive oil</item>
+        <item>1 (16 ounce) package frozen bite-size potato nuggets,
+2 slices deli ham, or more to taste,
+2 slices deli turkey, or more to taste,
+1 tomato slice,
+10 potato chips (such as Lay's®), or more to taste,
+4 slices cooked bacon,
+1 slice Swiss cheese, or more to taste,
+4 pickle slices</item>
+        <item>1 head red leaf lettuce, rinsed and torn,
+2 medium fresh tomatoes, chopped,
+1 medium red onion, chopped,
+6 tablespoons olive oil,
+2 tablespoons white wine vinegar,
+2 tablespoons chopped fresh parsley,
+2 cloves garlic, chopped,
+1 teaspoon dried basil,
+¼ teaspoon red pepper flakes,
+1 pinch dried oregano,
+½ pound sliced Capacola sausage,
+½ pound thinly sliced Genoa salami,
+¼ pound thinly sliced prosciutto,
+½ pound sliced provolone cheese,
+4 submarine rolls, split,
+1 cup dill pickle slices</item>
+        <item>2 slices whole wheat bread,
+1 slice Cheddar cheese,
+1 slice sweet onion,
+½ tomato, sliced,
+2 slices green bell pepper,
+1 slice avocado,
+½ cup fresh baby spinach leaves, large stems removed,
+salt and pepper to taste,
+1 teaspoon extra-virgin olive oil, or to taste,
+1 teaspoon white vinegar, or to taste,
+4 slices dill pickle,
+1 tablespoon sliced black olives,
+2 tablespoons canned jalapeno pepper slices</item>
+        <item>6 boneless, skinless chicken breast halves,
+2 tablespoons olive oil,
+salt and ground black pepper to taste,
+¼ teaspoon garlic powder,
+¼ teaspoon onion powder,
+¼ teaspoon dried oregano,
+¼ teaspoon crushed red pepper flakes,
+1 (8 ounce) jar sun-dried tomatoes, packed in oil - drained, oil reserved,
+1 (4 ounce) can sliced black olives, drained,
+6 hoagie rolls, split lengthwise</item>
+<item>2 pita bread rounds, 3 tablespoons mayonnaise, 3 tablespoons tahini (sesame-seed paste), 1 tomato, sliced, 4 slices firm tofu, 1 dash soy sauce, 1 pinch salt</item>
+    <item>2 slices smoked deli turkey, 2 slices wheat bread, 2 leaves lettuce, 1 ½ tablespoons crumbled feta cheese, 1 tablespoon Italian salad dressing, 1 tablespoon butter</item>
     </string-array>
     <string-array name="recsubrec">
-        <item>s1</item>
-        <item>s2</item>
-        <item>s3</item>
-        <item>s4</item>
-        <item>s5</item>
-        <item>s6</item>
-        <item>s7</item>
-        <item>s8</item>
+        <item><![CDATA[
+Step 1\n
+In a small bowl, mix together mayonnaise and Italian dressing. Spread mixture on hoagie rolls. Spread each roll with mustard. On each roll, arrange layers of turkey, ham, and cheese. Top each with dill pickle slices. Close sandwiches, and brush tops and bottoms with olive oil.
+\n
+Step 2\n
+Heat a non-stick skillet over medium high heat. Place sandwiches in skillet. Cook sandwiches for 2 minutes, pressing down with a plate covered with aluminum foil. Flip, and cook for 2 more minutes, or until cheese is melted. Remove from heat, place on plates, and cut in half diagonally.
+]]></item>
+        <item><![CDATA[
+Step 1\n
+Preheat a waffle iron according to manufacturer's instructions.
+\n
+Step 2\n
+Place about 1/2 of the potato nuggets on the preheated waffle iron, close the waffle iron, and cook until nuggets are golden brown and pressed to resemble a slice of bread, 3 to 5 minutes. Repeat with remaining potato nuggets.
+\n
+Step 3\n
+Place 1 slice of potato nugget "bread" on a plate; top with ham and turkey. Set tomato atop sliced meats and top tomato with potato chips. Place bacon over chips, Swiss cheese over bacon, and pickles over cheese. Top with remaining slice of potato nugget "bread".
+]]></item>
+        <item><![CDATA[
+Step 1\n
+In a large bowl, toss together the lettuce, tomatoes and onion. In a separate bowl, whisk together the olive oil, white wine vinegar, parsley, garlic, basil, red pepper flakes and oregano. Pour over the salad, and toss to coat evenly. Refrigerate for about 1 hour.
+\n
+Step 2\n
+Spread the submarine rolls open, and layer the Capacola, salami, prosciutto, and provolone cheese evenly on each roll. Top with some of the salad, and as many pickle slices as desired. Close the rolls and serve.
+]]></item>
+        <item><![CDATA[
+Step 1\n
+Top one slice of whole wheat bread with Cheddar cheese, onion, tomato, bell pepper, avocado, and spinach. Season with salt and pepper, and sprinkle with olive oil and vinegar. Top with dill pickle slices, olives, jalapeno pepper, and the second slice of bread.
+]]></item>
+        <item><![CDATA[
+Step 1\n
+Preheat an outdoor grill for medium high heat, and lightly oil grate. Lightly pound chicken to flatten. Trim excess fat from edges. Brush lightly with olive oil, then season both sides of chicken with salt, pepper, garlic powder, onion powder, oregano and red pepper to taste; set aside
+\n
+Step 2\n
+In a medium bowl, combine the sun-dried tomatoes, olives, and about 2 1/2 tablespoons oil from the tomatoes. Season with salt and pepper to taste; set aside
+\n
+Step 3\n
+Place chicken on preheated grill, and cook for 10 to 12 minutes, turning in different directions while cooking to get cross-hatch grill marks. Place cooked chicken on rolls, and top each with a heaping tablespoon of tomato mixture.
+]]></item>
+<item>
+    <![CDATA[
+1. Preheat your oven's broiler.
+\n
+2. Split the pita breads in half so that you have 4 round pieces. Spread mayonnaise on one half of each one, and tahini on the other half.
+\n
+3. Place tomato slices onto the mayonnaise halves, and sprinkle with a pinch of salt.
+\n
+4. Place 2 slices of tofu onto the tahini halves, and sprinkle a few drops of soy sauce over. Place the open sandwiches on a large baking sheet.
+\n
+5. Broil in the preheated oven until hot and bread is slightly toasted, about 4 minutes. Close the halves of each sandwich together, and cut into wedges to serve.
+]]>
+</item>
+        <item>
+        <![CDATA[
+1. Put turkey slices atop one bread slice; top with lettuce and feta cheese. Spread Italian salad dressing over one side of the second bread slice and lay atop the other slice with the dressing facing downward.
+\n
+2. Melt butter in a skillet over medium heat. Cook sandwich in melted butter until browned, about 2 minutes per side.
+]]>
+        </item>
     </string-array>
     <!--    ////////////////////////////////SUBWAY\\\\\\\\\\\\\\\\\\\\\\\-->
     <!--    //////////////////////////////////PANNER-->
     <string-array name="nampan">
-        <item>Paneer1</item>
-        <item>Paneer2</item>
-        <item>Paneer3</item>
-        <item>Paneer4</item>
-        <item>Paneer5</item>
-        <item>Paneer6</item>
-        <item>Paneer7</item>
-        <item>Paneer8</item>
+        <item>Paneer Tikka Masala</item>
+        <item>Shahi Paneer</item>
+        <item>Paneer Makhani</item>
+        <item>Palak Paneer </item>
+        <item>Aloo Matar Paneer</item>
+
     </string-array>
     <string-array name="recpan">
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
-        <item>time/recipe here</item>
+        <item>¼ cup butter,
+1 pound paneer, cut into 1/2-inch cubes,
+2 onions, finely chopped,
+1 green bell pepper, chopped,
+2 jalapeno peppers, chopped,
+1 tablespoon ground cashews,
+1 teaspoon garlic paste,
+1 teaspoon ginger paste,
+1 teaspoon cayenne pepper,
+1 teaspoon ground cumin,
+1 teaspoon ground coriander,
+1 teaspoon garam masala,
+1 (16 ounce) can tomato sauce,
+1 pint half-and-half,
+1 teaspoon salt, or to taste</item>
+        <item>2 tablespoons cooking oil,
+1 large onion, thinly sliced,
+4 cloves garlic, minced,
+1 teaspoon ground cumin,
+1 teaspoon ground coriander,
+½ teaspoon ground turmeric,
+½ teaspoon Kashmiri red chili powder,
+4 tomatoes, pureed,
+½ pound paneer, cubed,
+¼ cup water,
+1 teaspoon white sugar,
+salt to taste,
+¼ cup cream,
+2 tablespoons chopped fresh cilantro</item>
+        <item>1 tablespoon olive oil,
+¼ red onion, chopped,
+1 tablespoon butter,
+1 lemon, sliced into rounds,
+1 (1 inch) piece fresh ginger, grated,
+2 teaspoons garam masala,
+2 teaspoons chili powder,
+2 teaspoons ground cumin,
+1 cup half-and-half,
+¼ cup plain yogurt,
+3 ½ tablespoons tomato paste,
+1 tablespoon olive oil,
+6 ounces paneer, cut into 1/2-inch cubes,
+1 (16 ounce) can chickpeas, drained,
+salt and ground black pepper to taste</item>
+        <item>cooking spray,
+½ pound paneer, cubed,
+2 tablespoons canola oil, divided,
+1 teaspoon cumin seeds,
+1 ½ cups water,
+1 (10 ounce) package fresh spinach,
+1 large tomato, diced,
+3 cloves garlic,
+2 dried red chile peppers, or to taste,
+1 tablespoon chopped fresh ginger root,
+1 teaspoon curry powder,
+1 teaspoon ground coriander,
+1 teaspoon ground turmeric,
+1 pinch salt to taste</item>
+        <item>4 cloves garlic,
+1 (1 inch) piece fresh ginger,
+2 tablespoons vegetable oil,
+2 bay leaves,
+1 (1 inch) piece cinnamon stick,
+1 teaspoon coriander seeds,
+6 whole black peppercorns,
+4 pods green cardamom,
+4 whole cloves,
+1 large onion, minced,
+1 ½ teaspoons salt, divided,
+1 green chile pepper, cut into matchsticks,
+2 tomatoes, diced,
+½ cup water, if needed (Optional),
+2 teaspoons chili powder,
+1 teaspoon ground cumin,
+2 tablespoons butter,
+1 teaspoon ground fenugreek (menthi powder),
+1 russet potato, cut into 1/2-inch cubes,
+½ pound paneer, cut into 1/2-inch cubes,
+½ cup frozen peas,
+2 teaspoons honey</item>
+
     </string-array>
     <string-array name="recpanrec">
-        <item>p1</item>
-        <item>p2</item>
-        <item>p3</item>
-        <item>p4</item>
-        <item>p5</item>
-        <item>p6</item>
-        <item>p7</item>
-        <item>p8</item>
+        <item><![CDATA[
+    Step 1\n
+Melt butter in a skillet over medium heat; cook and stir paneer until golden, about 5 minutes. Add onions, green bell pepper, jalapeno peppers, cashews, garlic paste, ginger paste, cayenne pepper, cumin, coriander, and garam masala to paneer; cook and stir until fragrant and evenly coated, about 1 minute.
+\n
+Step 2\n
+Mix tomato sauce, half-and-half, and salt into paneer mixture; simmer until thickened, about 30 minutes.
+]]></item>
+        <item><![CDATA[
+Step 1\n
+Heat the oil in a large skillet over medium heat. Cook the onion and garlic in the hot oil until the onions are soft and golden brown, about 5 minutes. Sprinkle the cumin, coriander, turmeric, and chili powder over the onion and garlic; continue cooking until the seasonings are fragrant, about 30 seconds.
+\n
+Step 2\n
+Pour the pureed tomatoes into the skillet; cook until the excess liquid evaporates and the oil separates, 3 to 5 minutes. Add the paneer, water, sugar, and salt to the mixture; stir gently so the paneer does not break apart. Cook until the paneer begins to absorb some of the liquid, about 10 minutes. Stir the cream into the mixture and simmer another 5 minutes. Garnish with cilantro to serve.
+]]></item>
+        <item><![CDATA[
+Step 1\n
+Heat 1 tablespoon olive oil in a large saucepan over medium heat. Cook and stir red onion in the hot oil until fragrant, about 1 minute. Add butter, lemon, ginger, garam masala, chili powder, and cumin; stir to coat, about 1 minute.
+\n
+Step 2\n
+Stir half-and-half, yogurt, and tomato paste into onion mixture and cook until well mixed and smooth, about 5 minutes.
+\n
+Step 3\n
+Heat 1 tablespoon olive oil in a separate skillet over low heat. Pan-fry paneer in the hot oil until slightly brown, about 5 minutes per side. Mix cooked paneer and chickpeas into the spiced cream sauce. Simmer until heated through, about 10 minutes.
+]]></item>
+        <item><![CDATA[
+Step 1\n
+Heat a skillet coated with cooking spray over medium heat; fry paneer cubes until lightly browned on each side, about 5 minutes. Transfer paneer to a bowl.
+\n
+Step 2\n
+Heat 1 tablespoon canola oil in the same skillet used to cook paneer over medium heat. Add cumin seeds and cook until seeds are slightly red. Stir water, spinach, tomato, garlic, chile peppers, ginger, curry powder, ground coriander, and ground turmeric into cumin seeds. Season with salt.
+\n
+Step 3\n
+Bring spinach mixture to a boil and simmer until garlic is very soft, 15 to 20 minutes. Remove from heat and allow mixture to cool.
+\n
+Step 4\n
+Transfer spinach mixture to a blender or food processor; puree until smooth.
+\n
+Step 5\n
+Heat remaining 1 tablespoon canola oil in a saucepan over medium heat; add spinach puree and paneer cubes. Simmer until hot, about 5 minutes.]]></item>
+        <item><![CDATA[
+Step 1\n
+Place garlic and ginger in a blender or food processor; puree until smooth.
+\n
+Step 2\n
+Heat vegetable oil in a large saucepan over medium heat; cook and stir bay leaves, cinnamon stick, coriander seeds, peppercorns, cardamom pods, and cloves in hot oil until spices change color and become fragrant, 1 to 2 minutes. Add onion and 1/2 teaspoon salt; cook and stir until onion has softened, about 5 minutes.
+\n
+Step 3\n
+Stir garlic-ginger puree and green chile pepper into onion mixture; cook and stir until chile pepper is tender, 1 to 2 minutes more. Stir in tomatoes. If mixture becomes too thick, add water. Season with chili powder and cumin. Remove tomato mixture from heat and allow to cool for a few minutes.
+\n
+Step 4\n
+Transfer mixture to the blender or food processor; puree until smooth. Pour sauce into a saucepan and add butter and fenugreek.
+\n
+Step 5\n
+Bring sauce to a simmer over medium heat and stir in potatoes. Simmer until potatoes are nearly tender, 10 to 15 minutes; add paneer and frozen peas. Continue to simmer until potatoes and peas are tender, about 5 minutes more. Stir in honey and remaining 1 teaspoon salt.
+]]></item>
+
     </string-array>
 
 
