@@ -38,6 +38,7 @@ public class Home extends AppCompatActivity {
                 .addSubMenu(Color.parseColor("#fff591"),R.mipmap.account)
                 .addSubMenu(Color.parseColor("#B7241D"),R.mipmap.gear)
                 .addSubMenu(Color.parseColor("#397D20"),R.mipmap.logout)
+                .addSubMenu(Color.parseColor("#386A1B"),R.mipmap.help)
                 .setOnMenuSelectedListener(new OnMenuSelectedListener() {
                     @Override
                     public void onMenuSelected(int index) {
@@ -66,6 +67,10 @@ public class Home extends AppCompatActivity {
                                 FirebaseAuth.getInstance().signOut();
                                 Intent intent2 = new Intent(Home.this,MainActivity.class);
                                 startActivity(intent2);
+                                break;
+                            case 5:
+                                Toast.makeText(Home.this, "Help is currently helpless", Toast.LENGTH_SHORT).show();
+                                constraintLayout.setBackgroundColor(Color.parseColor("#FFFFFF"));
                                 break;
                         }
                     }
