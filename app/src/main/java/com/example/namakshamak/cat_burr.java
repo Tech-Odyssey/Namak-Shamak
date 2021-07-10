@@ -20,6 +20,7 @@ public class cat_burr extends AppCompatActivity {
         bn=getResources().getStringArray(R.array.namburger);
         br=getResources().getStringArray(R.array.recburger);
         brr=getResources().getStringArray(R.array.recburgerrec);
+
         Myadaptar myadaptar = new Myadaptar(this,bn,br,images,brr);
 
         recyclerView.setAdapter(myadaptar);
