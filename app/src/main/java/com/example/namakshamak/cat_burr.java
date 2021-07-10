@@ -9,7 +9,7 @@ import android.os.Bundle;
 public class cat_burr extends AppCompatActivity {
     RecyclerView recyclerView;
     String bn[],br[],brr[];
-    int images[]= {R.drawable.burger,R.drawable.burger,R.drawable.burger,R.drawable.burger,R.drawable.burger,R.drawable.burger,R.drawable.burger};
+    int images[]= {R.drawable.burger,R.drawable.burger,R.drawable.burger,R.drawable.burger,R.drawable.burger};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

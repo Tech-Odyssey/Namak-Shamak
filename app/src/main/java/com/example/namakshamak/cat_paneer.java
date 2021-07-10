@@ -10,7 +10,7 @@ public class cat_paneer extends AppCompatActivity {
     RecyclerView recyclerView;
     String pn[],pr[],brr[];
     int images[]={R.drawable.paneer,R.drawable.paneer,R.drawable.paneer,R.drawable.paneer,
-            R.drawable.paneer,R.drawable.paneer,R.drawable.paneer,R.drawable.paneer};
+            R.drawable.paneer};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

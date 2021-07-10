@@ -10,7 +10,7 @@ public class cat_sub extends AppCompatActivity {
     RecyclerView recyclerView;
     String sun[],sur[],brr[];
     int images[]={R.drawable.subway,R.drawable.subway,R.drawable.subway,R.drawable.subway,
-            R.drawable.subway,R.drawable.subway,R.drawable.subway,R.drawable.subway};
+            R.drawable.subway,R.drawable.subway,R.drawable.subway};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

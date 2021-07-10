@@ -9,7 +9,7 @@ import android.os.Bundle;
 public class cat_noodles extends AppCompatActivity {
      RecyclerView recyclerView;
      String nn[],sr[],brr[];
-     int images1[]={R.drawable.noodles,R.drawable.noodles,R.drawable.noodles,R.drawable.noodles,R.drawable.noodles,R.drawable.noodles,R.drawable.noodles,R.drawable.noodles,R.drawable.noodles};
+    int images1[]={R.drawable.noodles,R.drawable.noodles,R.drawable.noodles,R.drawable.noodles,R.drawable.noodles,R.drawable.noodles,R.drawable.noodles};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

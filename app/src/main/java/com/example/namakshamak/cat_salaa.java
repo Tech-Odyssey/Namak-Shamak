@@ -10,7 +10,7 @@ public class cat_salaa extends AppCompatActivity {
     RecyclerView recyclerView;
     String sn[],sr[],brr[];
     int images[]={R.drawable.salad,R.drawable.salad,R.drawable.salad,R.drawable.salad,R.drawable.salad,
-            R.drawable.salad,R.drawable.salad,R.drawable.salad};
+            R.drawable.salad};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
