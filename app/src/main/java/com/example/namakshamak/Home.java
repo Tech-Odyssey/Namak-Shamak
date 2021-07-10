@@ -32,13 +32,13 @@ public class Home extends AppCompatActivity {
         //assigning the instance to their respective ..
         circleMenu = findViewById(R.id.circle_menu);
         constraintLayout = findViewById(R.id.constraint_layout);
-        circleMenu.setMainMenu(Color.parseColor("#DB1D93"),R.mipmap.list,R.mipmap.multiply)
-                .addSubMenu(Color.parseColor("#E61DDB"),R.mipmap.home)
-                .addSubMenu(Color.parseColor("#3B20C9"),R.mipmap.add)
-                .addSubMenu(Color.parseColor("#fff591"),R.mipmap.account)
-                .addSubMenu(Color.parseColor("#B7241D"),R.mipmap.gear)
-                .addSubMenu(Color.parseColor("#397D20"),R.mipmap.logout)
-                .addSubMenu(Color.parseColor("#386A1B"),R.mipmap.help)
+        circleMenu.setMainMenu(Color.parseColor("#FF8385"),R.mipmap.list,R.mipmap.multiply)
+                .addSubMenu(Color.parseColor("#FF8385"),R.mipmap.home)
+                .addSubMenu(Color.parseColor("#FF8385"),R.mipmap.add)
+                .addSubMenu(Color.parseColor("#FF8385"),R.mipmap.account)
+                .addSubMenu(Color.parseColor("#FF8385"),R.mipmap.gear)
+                .addSubMenu(Color.parseColor("#FF8385"),R.mipmap.logout)
+                .addSubMenu(Color.parseColor("#FF8385"),R.mipmap.help)
                 .setOnMenuSelectedListener(new OnMenuSelectedListener() {
                     @Override
                     public void onMenuSelected(int index) {
