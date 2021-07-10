@@ -16,10 +16,10 @@
         android:layout_height="235dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
+        app:layout_constraintVertical_bias="0.205" />
 
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/neumorphCardView"
@@ -69,7 +69,7 @@
         android:id="@+id/textView4"
         android:layout_width="148dp"
         android:layout_height="36dp"
-        android:layout_marginTop="208dp"
+        android:layout_marginTop="256dp"
         android:text="Categories"
         android:textColor="@color/black"
         android:textSize="24dp"
@@ -86,7 +86,7 @@
         app:layout_constraintHorizontal_bias="0.977"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457">
+        app:layout_constraintVertical_bias="0.51">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -101,10 +101,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/burger"
                 android:onClick="gotocatbur"
-                />
-
+                app:srcCompat="@drawable/burger" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -112,9 +110,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/noodles"
                 android:onClick="gotocatnoodle"
-                />
+                app:srcCompat="@drawable/noodles" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -122,9 +119,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/salad"
                 android:onClick="gotosalad"
-                />
+                app:srcCompat="@drawable/salad" />
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -132,9 +128,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/subway"
                 android:onClick="gotosub"
-                />
+                app:srcCompat="@drawable/subway" />
 
             <ImageView
                 android:id="@+id/imageView11"
@@ -142,9 +137,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/paneer"
                 android:onClick="gotopan"
-                />
+                app:srcCompat="@drawable/paneer" />
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -157,10 +151,10 @@
         android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintHorizontal_bias="0.224"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.617" />
+        app:layout_constraintVertical_bias="0.66999996" />
 
     <HorizontalScrollView
         android:layout_width="374dp"
@@ -170,7 +164,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.868">
+        app:layout_constraintVertical_bias="0.93">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -183,54 +177,48 @@
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/chickencurry"
                 android:onClick="gotochickencurry"
-                />
+                app:srcCompat="@drawable/chickencurry" />
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/idli"
                 android:onClick="gotoidli"
-                />
+                app:srcCompat="@drawable/idli" />
 
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/kebabburger"
                 android:onClick="gotokebbur"
-                />
+                app:srcCompat="@drawable/kebabburger" />
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ramen"
                 android:onClick="gotoramen"
-                />
+                app:srcCompat="@drawable/ramen" />
 
             <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/recsalad"
                 android:onClick="gotosal"
-                />
+                app:srcCompat="@drawable/recsalad" />
 
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/recbiryani"
                 android:onClick="gotobiryani"
-                />
+                app:srcCompat="@drawable/recbiryani" />
         </LinearLayout>
     </HorizontalScrollView>
 
