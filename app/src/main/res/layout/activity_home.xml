@@ -10,6 +10,16 @@
     android:id="@+id/constraint_layout">
 
 
+    <com.hitomi.cmlibrary.CircleMenu
+        android:id="@+id/circle_menu"
+        android:layout_width="253dp"
+        android:layout_height="235dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221" />
 
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/neumorphCardView"
@@ -241,16 +251,6 @@
         app:neumorph_shapeType="flat"
         app:srcCompat="@drawable/logo" />
 
-
-    <com.hitomi.cmlibrary.CircleMenu
-        android:id="@+id/circle_menu"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginStart="92dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.174" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
