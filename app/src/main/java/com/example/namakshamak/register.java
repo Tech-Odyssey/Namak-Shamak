@@ -274,7 +274,7 @@ public class register extends AppCompatActivity {
                             Log.w(TAG, "signInWithCredential", task.getException());
                             Toast.makeText(register.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(register.this, "it is running", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(register.this, "Logged In with Facebook", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(register.this, Home.class);
                             startActivity(intent);
                         }
